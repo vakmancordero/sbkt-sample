@@ -1,0 +1,25 @@
+
+spring:
+  datasource:
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+app:
+  swagger:
+    name: QBits RestProxy
+    description: RestProxy
+    version: 2.0.0
+    maintainer-name: Arturo Cordero
+    maintainer-email: arturo.cordero@bsdenterprise.com
+    maintainer-url: https://github.com/arturhc
